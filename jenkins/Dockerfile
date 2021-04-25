@@ -22,12 +22,12 @@ RUN while read i ; \
 		do /usr/local/bin/install-plugins.sh $i ; \
 	done < /usr/share/jenkins/plugins
 
-ENV JENKINS_USER admin
-ENV JENKINS_PASS nutonomy
+ENV JENKINS_USER ashan
+ENV JENKINS_PASS 971521813
 
 
-#id_rsa.pub file will be saved at /root/.ssh/
-RUN ssh-keygen -f /root/.ssh/id_rsa -t rsa -N ''  
+# #id_rsa.pub file will be saved at /root/.ssh/
+# RUN ssh-keygen -f /root/.ssh/id_rsa -t rsa -N ''  
 
 
 # allows to skip Jenkins setup wizard
